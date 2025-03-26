@@ -127,12 +127,12 @@ impl KomobarConfig {
     }
 
     pub fn show_all_icons_on_komorebi_workspace(widgets: &[WidgetConfig]) -> bool {
-        widgets
-            .iter()
-            .any(|w| matches!(w, WidgetConfig::Komorebi(config) if config.workspaces.is_some_and(|w| w.enable && w.display.is_some_and(|s| matches!(s,
+        widgets.iter().any(|w| {
+            matches!(w, WidgetConfig::Komorebi(config) if config.workspaces.is_some_and(|w| w.enable && w.display.is_some_and(|s| matches!(s,
             WorkspacesDisplayFormat::AllIcons
             | WorkspacesDisplayFormat::AllIconsAndText
-            | WorkspacesDisplayFormat::AllIconsAndTextOnSelected)))))
+            | WorkspacesDisplayFormat::AllIconsAndTextOnSelected))))
+        })
     }
 }
 

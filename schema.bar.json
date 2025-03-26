@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "KomobarConfig",
-  "description": "The `komorebi.bar.json` configuration file reference for `v0.1.35`",
+  "description": "The `komorebi.bar.json` configuration file reference for `v0.1.36`",
   "type": "object",
   "required": [
     "left_widgets",
@@ -1057,6 +1057,86 @@
                         "type": "string",
                         "enum": [
                           "IconAndText"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": [
+              "StartMenu"
+            ],
+            "properties": {
+              "StartMenu": {
+                "type": "object",
+                "required": [
+                  "enable"
+                ],
+                "properties": {
+                  "enable": {
+                    "description": "Enable the Start menu widget",
+                    "type": "boolean"
+                  },
+                  "format": {
+                    "description": "Display format",
+                    "oneOf": [
+                      {
+                        "description": "Show only icon",
+                        "type": "string",
+                        "enum": [
+                          "Icon"
+                        ]
+                      },
+                      {
+                        "description": "Show only text",
+                        "type": "string",
+                        "enum": [
+                          "Text"
+                        ]
+                      },
+                      {
+                        "description": "Show an icon and text for the selected element, and text on the rest",
+                        "type": "string",
+                        "enum": [
+                          "TextAndIconOnSelected"
+                        ]
+                      },
+                      {
+                        "description": "Show both icon and text",
+                        "type": "string",
+                        "enum": [
+                          "IconAndText"
+                        ]
+                      },
+                      {
+                        "description": "Show an icon and text for the selected element, and icons on the rest",
+                        "type": "string",
+                        "enum": [
+                          "IconAndTextOnSelected"
+                        ]
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "description": "Start menu icon",
+                    "oneOf": [
+                      {
+                        "description": "Yin Yang",
+                        "type": "string",
+                        "enum": [
+                          "YinYang"
+                        ]
+                      },
+                      {
+                        "description": "Windows logo",
+                        "type": "string",
+                        "enum": [
+                          "WindowsLogo"
                         ]
                       }
                     ]
@@ -2475,6 +2555,86 @@
               }
             },
             "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": [
+              "StartMenu"
+            ],
+            "properties": {
+              "StartMenu": {
+                "type": "object",
+                "required": [
+                  "enable"
+                ],
+                "properties": {
+                  "enable": {
+                    "description": "Enable the Start menu widget",
+                    "type": "boolean"
+                  },
+                  "format": {
+                    "description": "Display format",
+                    "oneOf": [
+                      {
+                        "description": "Show only icon",
+                        "type": "string",
+                        "enum": [
+                          "Icon"
+                        ]
+                      },
+                      {
+                        "description": "Show only text",
+                        "type": "string",
+                        "enum": [
+                          "Text"
+                        ]
+                      },
+                      {
+                        "description": "Show an icon and text for the selected element, and text on the rest",
+                        "type": "string",
+                        "enum": [
+                          "TextAndIconOnSelected"
+                        ]
+                      },
+                      {
+                        "description": "Show both icon and text",
+                        "type": "string",
+                        "enum": [
+                          "IconAndText"
+                        ]
+                      },
+                      {
+                        "description": "Show an icon and text for the selected element, and icons on the rest",
+                        "type": "string",
+                        "enum": [
+                          "IconAndTextOnSelected"
+                        ]
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "description": "Start menu icon",
+                    "oneOf": [
+                      {
+                        "description": "Yin Yang",
+                        "type": "string",
+                        "enum": [
+                          "YinYang"
+                        ]
+                      },
+                      {
+                        "description": "Windows logo",
+                        "type": "string",
+                        "enum": [
+                          "WindowsLogo"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "additionalProperties": false
           }
         ]
       }
@@ -3810,6 +3970,86 @@
                         "type": "string",
                         "enum": [
                           "IconAndText"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": [
+              "StartMenu"
+            ],
+            "properties": {
+              "StartMenu": {
+                "type": "object",
+                "required": [
+                  "enable"
+                ],
+                "properties": {
+                  "enable": {
+                    "description": "Enable the Start menu widget",
+                    "type": "boolean"
+                  },
+                  "format": {
+                    "description": "Display format",
+                    "oneOf": [
+                      {
+                        "description": "Show only icon",
+                        "type": "string",
+                        "enum": [
+                          "Icon"
+                        ]
+                      },
+                      {
+                        "description": "Show only text",
+                        "type": "string",
+                        "enum": [
+                          "Text"
+                        ]
+                      },
+                      {
+                        "description": "Show an icon and text for the selected element, and text on the rest",
+                        "type": "string",
+                        "enum": [
+                          "TextAndIconOnSelected"
+                        ]
+                      },
+                      {
+                        "description": "Show both icon and text",
+                        "type": "string",
+                        "enum": [
+                          "IconAndText"
+                        ]
+                      },
+                      {
+                        "description": "Show an icon and text for the selected element, and icons on the rest",
+                        "type": "string",
+                        "enum": [
+                          "IconAndTextOnSelected"
+                        ]
+                      }
+                    ]
+                  },
+                  "icon": {
+                    "description": "Start menu icon",
+                    "oneOf": [
+                      {
+                        "description": "Yin Yang",
+                        "type": "string",
+                        "enum": [
+                          "YinYang"
+                        ]
+                      },
+                      {
+                        "description": "Windows logo",
+                        "type": "string",
+                        "enum": [
+                          "WindowsLogo"
                         ]
                       }
                     ]
